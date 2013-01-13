@@ -4,6 +4,13 @@
 
 [credential]
 	helper = cache --timeout=3600
+	
+[core]
+	whitespace = space-before-tab, trailing-space
+	
+[diff]
+	renames = copies
+	mnemonicprefix = true
 
 [push]
 	default = simple
