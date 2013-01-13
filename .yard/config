@@ -1,0 +1,5 @@
+--- !ruby/hash:SymbolHash
+:load_plugins: false
+:ignored_plugins: []
+:autoload_plugins: []
+:safe_mode: false
