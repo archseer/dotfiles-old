@@ -21,8 +21,13 @@ alias hi='history | tail -20'
 
 PS1='\e[0;34m[\u@\h \W]\$  \e[m'
 PS1='\e[0;34m┌─\e[0;35m\u\e[0;32m[\W] \e[0;34m\n └─ \e[m'
+
 export EDITOR="scite"
 export SDL_AUDIODRIVER=alsa
+
+# put ~/bin on PATH if you have it
+test -d "$HOME/bin" &&
+PATH="$HOME/bin:$PATH"
 
 # ex - archive extractor
 # usage: ex <file>
