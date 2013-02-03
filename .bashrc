@@ -16,6 +16,7 @@ alias rconf='sudo scite /etc/rc.conf'	 			# edit rc.conf
 alias timesync='sudo ntpd -qg; sudo hwclock -w'	# sync time
 
 alias du1='du -h --max-depth=1'
+alias fin='find , -iname'
 alias fn='find . -name'
 alias hi='history | tail -20'
 
