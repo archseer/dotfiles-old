@@ -34,3 +34,6 @@
 	added = yellow
 	changed = green bold
 	untracked = blue bold
+
+[alias]
+	undo = reset --soft HEAD^
