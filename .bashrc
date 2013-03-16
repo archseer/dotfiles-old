@@ -6,7 +6,6 @@
 [[ $- != *i* ]] && return
 
 export PATH
-export RUBYOPT=-Ku
 
 shopt -s cdspell          # autocorrects cd misspellings
 
