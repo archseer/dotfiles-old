@@ -11,18 +11,18 @@ shopt -s cdspell          # autocorrects cd misspellings
 
 alias ls='ls --color=auto'						  # colorized ls
 alias grep='grep --color=auto'          # colorized grep
-alias rconf='sudo scite /etc/rc.conf'	 			# edit rc.conf
+alias rconf='sudo subl /etc/rc.conf'	 			# edit rc.conf
 alias timesync='sudo ntpd -qg; sudo hwclock -w'	# sync time
 
 alias du1='du -h --max-depth=1'
-alias fin='find , -iname'
+alias fin='find . -iname'
 alias fn='find . -name'
 alias hi='history | tail -20'
 
 PS1='\e[0;34m[\u@\h \W]\$  \e[m'
 PS1='\e[0;34m┌─\e[0;35m\u\e[0;32m[\W] \e[0;34m\n └─ \e[m'
 
-export EDITOR="scite"
+export EDITOR="vim"
 export SDL_AUDIODRIVER=alsa
 
 # put ~/bin on PATH if you have it
@@ -57,14 +57,7 @@ roll () {
     *.rar) shift && rar $FILE $* ;;
   esac
 }
- 
-# remind me, its important!
-# usage: remindme <time> <text>
-# e.g.: remindme 10m "omg, the pizza"
-function remindme() {
-  sleep $1 && zenity --info --text "$2" &
-}
- 
+
 # swap() -- switch 2 filenames around
 function swap() {
   local TMPFILE=tmp.$$
