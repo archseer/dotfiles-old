@@ -23,7 +23,7 @@ gap_y 40
 minimum_size 450
 maximum_width 190
 own_window yes
-#own_window_type override
+own_window_type override
 own_window_transparent yes
 own_window_hints undecorate,sticky,skip_taskbar,skip_pager,below
 own_window_argb_visual yes
