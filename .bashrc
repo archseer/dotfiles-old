@@ -5,6 +5,8 @@
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
+export GTK2_RC_FILES="$HOME/.gtkrc-2.0" # qt detection of GTK+ theme
+
 export PATH
 
 shopt -s cdspell          # autocorrects cd misspellings
