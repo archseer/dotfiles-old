@@ -23,7 +23,6 @@ PS1='\e[0;34m[\u@\h \W]\$  \e[m'
 PS1='\e[0;34m┌─\e[0;35m\u\e[0;32m[\W] \e[0;34m\n └─ \e[m'
 
 export EDITOR="vim"
-export SDL_AUDIODRIVER=alsa
 
 # put ~/bin on PATH if you have it
 test -d "$HOME/bin" &&
@@ -34,10 +33,10 @@ PATH="$HOME/bin:$PATH"
 ex () {
   if [ -f $1 ] ; then
     case $1 in
-      *.rar)       rar x $1   ;;
-      *.zip)       unzip $1   ;;
-      *.7z)        7z x $1    ;;
-      *)           tar xf $1  ;;
+      *.rar) rar x $1   ;;
+      *.zip) unzip $1   ;;
+      *.7z)  7z x $1    ;;
+      *)     tar xf $1  ;;
     esac
   else
     echo "'$1' is not a valid file"
