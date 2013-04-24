@@ -11,9 +11,8 @@ export PATH
 
 shopt -s cdspell          # autocorrects cd misspellings
 
-alias ls='ls --color=auto'						  # colorized ls
-alias grep='grep --color=auto'          # colorized grep
-alias rconf='sudo subl /etc/rc.conf'	 			# edit rc.conf
+alias ls='ls --color=auto'			# colorized ls
+alias grep='grep --color=auto'  # colorized grep
 alias timesync='sudo ntpd -qg; sudo hwclock -w'	# sync time
 
 alias du1='du -h --max-depth=1'

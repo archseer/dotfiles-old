@@ -1,0 +1,9 @@
+#include "/home/speed/.colors/fallac"
+
+URxvt.font: xft:anonymous pro:size=10
+URxvt.scrollBar: false
+URxvt.iconFile: /usr/share/icons/Faenza/apps/scalable/Terminal.svg
+URxvt.cursorBlink: true
+URxvt.fading:       10
+URxvt.fadeColor:    #000000 
+URxvt.urgentOnBell: true
