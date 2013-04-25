@@ -7,3 +7,8 @@ URxvt.cursorBlink: true
 URxvt.fading:       10
 URxvt.fadeColor:    #000000 
 URxvt.urgentOnBell: true
+
+! Open URL's
+URxvt.perl-ext-common:  default,matcher
+URxvt.url-launcher:      /usr/bin/chromium
+URxvt.matcher.button:   1
